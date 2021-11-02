@@ -1,9 +1,9 @@
 <?php
 //get data from form  
-$name = $_POST['name'];
-$email= $_POST['email'];
-$subject = ['subject'];
-$message= $_POST['message'];
+$name = $_GET['name'];
+$email= $_GET['email'];
+$subject = $_GET['subject'];
+$message= $_GET['message'];
 
 $to = "stemitomy@gmail.com";
 
