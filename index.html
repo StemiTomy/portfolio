@@ -182,20 +182,20 @@
                 </div>
                 <div class="column right">
                     <div class="text">Envíame un mensaje</div>
-                    <form action="#">
+                    <form action="mail.php" method="POST">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Nombre" required>
+                                <input type="text" name="name" placeholder="Nombre" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="E-Mail" required>
+                                <input type="email" name="email" placeholder="E-Mail" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Asunto" required>
+                            <input type="text" name="subject" placeholder="Asunto" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Describe el asunto..." required></textarea>
+                            <textarea cols="30" rows="10" name="message" placeholder="Describe el asunto..." required></textarea>
                         </div>
                         <div class="button">
                             <button type="submit">Enviar mensaje</button>
