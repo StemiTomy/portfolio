@@ -1,18 +1,217 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Stelut Tomoiaga</title>
+    <link rel="shortcut icon" href="imagenes/pngegg.png">
+    <link rel="stylesheet" href=".\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 </head>
-<body>
 
-    <form action="https://formsubmit.co/estemitomy@gmail.com" method="POST">
-        <input type="text" name="_subject" value="Nuevo email">
-        <input type="email" name="email" placeholder="email" required>
-        <input type="text" name="message" placeholder="tu mensjae aqui" required>
-        <button type="submit">DALE</button>
-    </form>
-    
+<body>
+    <!-- boton para ir arriba del todo-->
+    <div class="scroll-up-btn">
+        <i class="fa fa-sort-up"></i>
+    </div>
+    <!-- barra de navegación-->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home">Página Principal</a></li>
+                <li><a href="#about">Sobre mi</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#skills">Conocimientos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <div class="menu-btn"> <!-- no sale bien el icono... -->
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu principal -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="contenido-principal">
+                <div class="texto1">Hola, mi nombre es</div>
+                <div class="texto2">Stelut Tomoiaga</div>
+                <div class="texto3">Soy <span class="typing"></span></div>
+                <a href="#contact">Contrátame</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion sobre mi -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">Sobre mí</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="imagenes/perfil1r.png" alt="perfil 1">
+                </div>
+                <div class="column right">
+                    <div class="text">
+                        Soy Stelut, soy <span class="typing-2"></span>
+                    </div>
+                    <p>Soy un programador, desarrollador con experiencia en aplicaciones multiplataforma y web, con amplia experiencia en Java, seguido de Python, JavaScript y Kotlin. Diseñador de páginas web adaptables al dispositivo, con una interfaz atractiva para el usuario final y de uso intuitivo para el mismo. También me considero un analista de sistemas, datos y código. Me gustaría añadir que he recibido formación del Grado Superior de Desarrollo de Aplicaciones Multiplataforma.</p>
+                    <a href="#">Descargar CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion de servicios -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">Mis servicios</h2>
+                <div class="serv-content">
+                    <div class="card">
+                        <div class="box">
+                            <i class="fa fa-code"></i>
+                            <div class="text">Desarrollo de Apps</div>
+                            <p>Implementación de aplicaciones para todo tipo de dispositivos y con finalidades amplias, de caracter general.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <i class="fa fa-paint-brush"></i>
+                            <div class="text">Diseño Web</div>
+                            <p>Creación y modificación de páginas web mediante HTML, CSS y JavaScript; junto con framewokrs como NodeJS, Django/Flask y PHP.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <i class="fa fa-file-code-o"></i>
+                            <div class="text">Análisis de código</div>
+                            <p>Objservar el entorno de desarrollo como su sistema operativo junto al código fuente, para determinar la calidad del software.</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Seccion de conocimientos/habilidades -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">Conocimientos</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">Mis habilidades y experiencias</div>
+                    <p>Tengo un amplio conocimiento de la programación o desarrollo de software, ya sea en la POO (Programación Orientada a Objetos) como en el acceso y la manipulación de datos mediante consola o interfaces. Trabajo con diferentes lenguajes junto con las librerías y los framewokrs correspondientes. Java y Python los uso para aplicaciones de carácter general. JavaScript, HTML y CSS para el desarrollo web, junto con PHP o Python en backend. Kotlin o Java para aplicaciones móviles y finalmente MySQL como base de datos principal, entre otros.</p>
+                    <a href="">Leer más</a>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>JS, CSS y HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line html5"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>MySQL</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line mysql"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Python</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line python"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Java</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line java"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>PHP</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="line php"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contacta conmigo</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Contacta</div>
+                    <p>Comunícate conmigo mediante teléfono, correo electrónico o mis redes sociales. Gracias por su interés.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fa fa-phone" style="font-size: 35px;"></i>
+                            <div class="info">
+                                <div class="head">Teléfono</div>
+                                <div class="sub-title">+34 684 118 554</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fa fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">E-Mail</div>
+                                <div class="sub-title">stemitomy@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fa fa-map-marker" style="font-size: 35px;"></i>
+                            <div class="info">
+                                <div class="head">Dirección</div>
+                                <div class="sub-title">España, Comunidad Valenciana, Oliva (46780)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Envíame un mensaje</div>
+                    <form action="https://formsubmit.co/stemitomy@gmail.com" method="POST">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" name="name" placeholder="Nombre" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" name="email" placeholder="E-Mail" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="_subject" placeholder="Asunto" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" name="message" placeholder="Describe el asunto..." required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Enviar mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion footer -->
+    <footer>
+        <span>Creado por <a href="">Stelut Tomoiaga</a> | <span class="fa fa-copyright"></span> Todos los derechos reservados.</span>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
