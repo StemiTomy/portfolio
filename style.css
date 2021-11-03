@@ -172,10 +172,10 @@ html{
 
 /* estilo de todas las secciones */
 
-.about, .services, .skills, .contact, footer {
+.about, .projects, .services, .skills, .contact, footer {
   font-family: "Poppins", sans-serif;
 }
-.about .about-content, .services .serv-content, .skills .skills-content, .contact .contact-content {
+.about .about-content, .projects .projects-content, .services .serv-content, .skills .skills-content, .contact .contact-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -216,6 +216,9 @@ section .title::after {
 
 
 /* estilo del sobre mi, primera foto */
+.about{
+  padding-bottom: 40px;
+}
 
 .about .title::after{
   content: "¿quién soy?";
@@ -260,8 +263,62 @@ section .title::after {
   background: none;
 }
 
+/* espacio */
+.space{
+  background-color: black;
+  padding: 30px 0;
+}
+/* Sección de proyectos, estilos */
+.projects{
+  padding-top: 30px;
+}
+.projects .projects-content{
+  background-color: black;
+  padding: 20px 20px 0 20px;
+  border-radius: 15px;
+}
+.projects .projects-content div{
+  color: white;
+  margin: 0 0 20px 0;
+}
 
-/* sección de servicios, estilos */
+/* Cards/box, estilos */
+
+.card{
+  width: calc(33% - 20px);
+  background: rgb(26, 26, 26);
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.card:hover{
+  background: crimson;
+}
+.card .box{
+  transition: all 0.3s ease;
+}
+.card:hover .box{
+  transform: scale(1.07);
+}
+.card i{
+  color: crimson;
+  font-size: 40px;
+  padding: 5px;
+  transition: color 0.3s ease;
+}
+.card:hover i{
+  color: white;
+}
+.card .text{
+  font-size: 25px;
+  font-weight: 600;
+  margin: 10px 0 7px 0;
+}
+
+
+/* Sección de servicios, estilos */
 .services{
   color: white;
   background: black;
@@ -272,38 +329,6 @@ section .title::after {
 .services .title::after{
   content: "¿qué ofrezco?";
   background: black;
-}
-.services .serv-content .card{
-  width: calc(33% - 20px);
-  background: rgb(26, 26, 26);
-  text-align: center;
-  border-radius: 6px;
-  padding: 20px 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.services .serv-content .card:hover{
-  background: crimson;
-}
-.services .serv-content .card .box{
-  transition: all 0.3s ease;
-}
-.services .serv-content .card:hover .box{
-  transform: scale(1.07);
-}
-.services .serv-content .card i{
-  color: crimson;
-  font-size: 40px;
-  padding: 5px;
-  transition: color 0.3s ease;
-}
-.services .serv-content .card:hover i{
-  color: white;
-}
-.services .serv-content .card .text{
-  font-size: 25px;
-  font-weight: 600;
-  margin: 10px 0 7px 0;
 }
 
 
@@ -587,7 +612,7 @@ footer span a:hover{
   #about > div > div > div.column.right {
     flex: 100%;
   }
-  .services .serv-content .card{
+  .card{
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
@@ -610,7 +635,7 @@ footer span a:hover{
   .home .contenido-principal a {
     font-size: 20px;
   }
-  .services .serv-content .card{
+  .card{
     width: 100%;
   }
 }
@@ -620,5 +645,12 @@ footer span a:hover{
   }
   .home .contenido-principal .texto3 {
     font-size: 25px;
+  }
+  .home .contenido-principal .texto3 span{
+    font-size: 40px;
+  }
+  #about > div > div > div.column.right > div{
+    font-weight: 700;
+    font-size: 22px;
   }
 }
